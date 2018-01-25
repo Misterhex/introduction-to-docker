@@ -1,8 +1,6 @@
-FROM ubuntu
+FROM node
 
-RUN apt update -y
-
-RUN apt install -y nodejs nodejs-legacy
+RUN npm init -y && npm install redis
 
 COPY server.js .
 
