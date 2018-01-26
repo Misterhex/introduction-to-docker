@@ -34,4 +34,8 @@ docker rmi misterhex/demoimage
 
 docker rmi demoimage
 
+example voting app
 
+docker-compose build
+
+docker-compose up
