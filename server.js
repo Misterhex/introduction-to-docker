@@ -2,7 +2,10 @@ const http = require('http')
 const port = 3000
 
 var redis = require("redis"),
-client = redis.createClient();
+client = redis.createClient(
+{
+    host: "redis"
+});
 
 const requestHandler = (request, response) => {
   console.log(request.url)
